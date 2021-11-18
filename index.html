@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caption Card</title>
+    <style>
+        .box{
+            width: 310px;
+            height: 400px;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+        }
+        .box-contant{
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0,1);
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            padding: 50px 25px;
+            box-sizing: border-box;
+            transition: all 0.4s ease-in-out 0s;
+            color: white;
+        }
+        .box:hover .box-contant{
+            background: rgba(0,0,0,0.7);
+            opacity: 1;
+            transition-delay: 0.28s;
+        }
+        .box-card{
+            width: 100%;
+            height: 15%;
+            background: rgb(117, 185, 14);
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            box-sizing: border-box;
+            transition: all 0.4s ease-in-out 0s;
+            padding: 5px 0;
+        }
+        .box:hover .box-card{
+            bottom: 0;
+            left: 0;
+            transition-delay: 0s;
+        }
+        a{
+            text-decoration: none;
+            display: block;
+            padding: 7px 15px;
+            border: 1px solid #fff;
+            border-radius: 24px;
+            color: #fff;
+        }
+        .btn1{
+            position: absolute;
+            top: 25%;
+            left: 5%;
+        }
+        .btn2{
+            position: absolute;
+            top: 25%;
+            right: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="ej.jpg" alt="EJ">
+        <div class="box-contant">
+            <h3>Website name</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, blanditiis!</p>
+        </div>
+        <div class="box-card">
+            <div class="btn1"><a href="#">Wordpress</a></div>
+            <div class="btn2"><a href="#">Visitsite</a></div>
+        </div>
+    </div>
+</body>
+</html>
